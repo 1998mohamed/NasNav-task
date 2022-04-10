@@ -5,7 +5,6 @@ import Header from './components/Header'
 import Types from './components/Types'
 import Path from './components/Path'
 import Section from './components/Section'
-import Footer from './components/Footer';
 import {DataProvider} from './components/Context'
 
 
@@ -20,7 +19,6 @@ class App extends React.Component{
             <Types />
             <Path />
             <Section />
-            <Footer />
           </Router>
         </div>
       </DataProvider>

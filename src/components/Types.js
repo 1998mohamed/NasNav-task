@@ -1,13 +1,8 @@
 import React, { Component } from 'react'
 import Menu from './svg/bars-solid.svg'
-import Search from './svg/search.svg'
-import Logo from './svg/addidas.svg'
+
 import Close from './svg/times-solid.svg'
-import CartIcon from './svg/shopping-cart-solid.svg'
-import Car from './svg/car.svg'
-import Love from './svg/love.svg'
-import Login from './svg/login.svg'
-import {Link} from 'react-router-dom'
+
 import './css/Types.css'
 import {DataContext} from './Context'
 
@@ -56,12 +51,3 @@ export class Types extends Component {
 }
 
 export default Types;
-
-{/* <li>
-                            <div className="nav-cart">
-                                <span>{cart.length}</span>
-                                <Link to="/cart">
-                                    <img src={CartIcon} alt="" width="20"/>
-                                </Link>medoo
-                            </div>
-                        </li> */}

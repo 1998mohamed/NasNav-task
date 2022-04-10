@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import {DataContext} from '../Context'
 import {Link} from 'react-router-dom'
-import Colors from './Colors'
 import '../css/Details.css'
 import Main from '../images/main.JPG'
 import Left from '../images/left.png'
@@ -137,18 +136,6 @@ export class Details extends Component {
                                 <li><Link  className='cart-link' to="/">Review Cart</Link></li>
                                 <li><span className='cart-ckeck'>Complete Checkout</span></li>
                             </ul>
-                            {/* <div className="box">
-                                <div className="row">
-                                    <h2>{item.title}</h2>
-                                    <span>${item.price}</span>
-                                </div>
-                                <Colors colors={item.colors}/>
-                                <p>{item.description}</p>
-                                <p>{item.content}</p>
-                                <Link to="/cart" className="cart" onClick={() => addCart(item._id)}>
-                                    Add to cart
-                                </Link>
-                            </div> */}
                         </div>
                     ))
                 }

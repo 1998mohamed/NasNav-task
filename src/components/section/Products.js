@@ -14,6 +14,7 @@ import Star from '../images/star.svg'
 import Lightstar from '../images/star.png'
 import Addidas from '../images/circle1.png'
 import Adiddas from '../images/circle2.png'
+import Footer from '../Footer'
 
 
 export class Products extends Component {
@@ -148,8 +149,7 @@ export class Products extends Component {
                    ))
                }
             </div>
-            {/* //modale */}
-           
+            <Footer />
             </>
         )
     }
