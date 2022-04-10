@@ -1,0 +1,107 @@
+navbar{
+    background-color: white;
+    max-height: 60px;
+    display: flex;
+    padding-left: 12%;
+    /* justify-content: space-around; */
+    align-items: center;
+    overflow: hidden;
+}
+.search{
+    display: flex;
+    font-size: smaller;
+    font-weight: bold;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 0.5004362463951111px solid #D8D8D8;
+    border-radius: 24px;
+    opacity: 1;
+    width: 150px;
+    height: 25px;
+    align-items: center;
+    margin: 10px;
+    padding: 8px;
+}
+.addidas{
+    text-align: center;
+    padding-left: 250px;
+    padding-right: 220px;
+}
+
+.text
+{
+    display: flex;
+    text-align: center;
+    letter-spacing: 0px;
+    color: #000000;
+    font-size: small;
+}
+.text span{
+    text-decoration: underline;
+    font-weight: bold;
+    padding-left: 5px;
+}
+.icone{
+    justify-content: center;
+    display: flex;
+    padding-right: 30px;
+}
+.icone p{
+    justify-content: center;
+    padding-left: 2px;
+    font-weight: bold;
+    font-size: smaller;
+    text-align: left;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+nav .nav-cart{
+    display: flex;
+    cursor: pointer;
+    position: relative;
+}
+nav .nav-cart span{
+    position: absolute;
+    top:-12px;
+    right: -7px;
+    background: crimson;
+    font-size: 10px;
+    color: white;
+    padding: 3px 5px;
+    border-radius: 50%;
+    z-index: -1;
+}
+navbar .menu,
+navbar .close{
+    cursor: pointer;
+    display: none;
+}
+@media (max-width: 650px){
+    nav ul{
+        position: fixed;
+        top:0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        background: white;
+        z-index: 99;
+        opacity: 0.97;
+        transition: 0.5s linear;
+    }
+    navbar .menu,
+    navbar .close{
+        display: block;
+    }
+    navbar .close{
+        position: absolute;
+        top:10px;
+        right: 20px;
+    }
+    navbar ul.toggle{
+        left: 0;
+    }
+}

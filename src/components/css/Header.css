@@ -1,0 +1,100 @@
+header{
+    background-color: #FFF100;
+    max-height: 48px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+
+.submenu{
+    padding-right: 10px;
+    width: 30px;
+    height: 28px;
+}
+nav ul{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+.text
+{
+    display: flex;
+    text-align: center;
+    letter-spacing: 0px;
+    color: #000000;
+    font-size: small;
+}
+.text span{
+    text-decoration: underline;
+    font-weight: bold;
+    padding-left: 5px;
+}
+.icon{
+    justify-content: center;
+    display: flex;
+}
+.icon p{
+    padding: 2px;
+    font-size: smaller;
+    text-align: left;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+nav ul li a:hover{
+    color: lightseagreen;
+}
+nav .nav-cart{
+    cursor: pointer;
+    position: relative;
+}
+nav .nav-cart span{
+    position: absolute;
+    top:-12px;
+    right: -7px;
+    background: crimson;
+    font-size: 10px;
+    color: white;
+    padding: 3px 5px;
+    border-radius: 50%;
+    z-index: -1;
+}
+header .menu,
+header .close{
+    cursor: pointer;
+    display: none;
+}
+@media (max-width: 650px){
+    header ul{
+        position: fixed;
+        top:0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        background: white;
+        z-index: 99;
+        opacity: 0.97;
+        transition: 0.5s linear;
+    }
+    header .menu,
+    header .close{
+        display: block;
+    }
+    header .close{
+        position: absolute;
+        top:10px;
+        right: 20px;
+    }
+    header ul.toggle{
+        left: 0;
+    }
+}

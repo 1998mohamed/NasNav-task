@@ -1,0 +1,28 @@
+path{
+    background-color: white;
+    height: 40px;
+    padding: 10px;
+    display: flex;
+    padding-left: 12%;
+    /* justify-content: space-around; */
+    align-items: center;
+    overflow: hidden;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+
+}
+path span{
+    font-weight: 500;
+    font-size: small;
+    text-align: left;
+    letter-spacing: 0px;
+    color: #1D1D1B;
+}
+path p{
+    padding: 3px;
+    font-size: small;
+    text-align: left;
+    text-decoration: underline;
+    letter-spacing: 0px;
+    color: #1D1D1B;
+}
